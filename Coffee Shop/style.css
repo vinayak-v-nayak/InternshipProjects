@@ -1,0 +1,265 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 70%;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+.section1{
+    position: relative;
+    display: block;
+    background-color: black;
+}
+.section1 h1{
+    position: absolute;
+  top: 50%; 
+  left: 25%; 
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150px;
+  font-family:'Brush Script MT';
+  text-align: center;
+}
+.section1 img{
+    display: relative;
+    height: 700px;
+    width: 100%; 
+
+
+}
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.service {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+.service:hover{
+    transition: 0.1 ease;
+    transform: scale(1.2);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF5733;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#services{
+    background-color: #555;
+}
+#services h2{
+    font-family: papyrus;
+    font-weight: 600;
+    font-size: 50px;
+    padding:10px;
+    padding-bottom: 50px;
+
+}
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.learnmore{
+    display: block;
+    margin-left: 50%;
+    background-color:blue;
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.price{
+    display: block;
+    background-color:pink;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left:50px;
+    cursor: pointer;
+}
+.service {
+    width: 45%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.service {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.service h3 {
+    margin: 10px 0;
+}
+#about{
+    background-color: aquamarine;
+}
+#about h2{
+    font-size: 50px;
+    padding:10px;
+    padding-bottom: 100px;
+}
+.about1{
+    display: flex;
+    justify-content: space-around;
+}
+.abt{
+        width: 50%;
+
+}
+.abt h3{
+    font-size: 50px;
+    font-family:'Brush Script MT';
+}
+.abt h5{
+    font-size: 30px;
+    font-family:Papyrus,sans-serif;
+}
+.abt p{
+    font-size: 20px;
+    font-family: Copperplate,Papyrus,fantasy;
+    font-weight: 1000;
+}
+.about1 img{
+    width:500px;
+    height: 500px;
+    border-radius: 20px;
+}
+#contact h2{
+    font-size: 50px;
+    padding:10px;
+    padding-bottom: 50px;
+}
+.contact1{
+    display: flex;
+    justify-content: space-around;
+}
+.add{
+    width: 50%;
+}
+.contact1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.add,
+.contact-form {
+    width: 50%;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.add{
+
+}
+c
+.contact-form {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form h3 {
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact-form input[type="submit"] {
+
+    margin-top: 15px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    background: #009688;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #007d67;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+

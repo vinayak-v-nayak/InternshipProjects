@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="importedContent"></div>
+    <script src="master.js"></script>
+    
+    <section id="services" class="section">
+        <h2>Our Services/Products</h2>
+        <div class="services-container">
+            <div class="service" id="item1">
+                <h3>The Black Coffee</h3>
+                <div class="details">
+                    <img src="images/2.jpg" alt="Coffee Service 1">
+                    <p>Enjoy a rich blend of premium coffee beans sourced from around the world. Served fresh and hot.</p>
+                    <p>Price: $4.99</p>
+                    <p class="price"><button onclick="addItemToCart('item1')">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="service" id="item2">
+                <h3>Hot Espresso Shot</h3>
+                <div class="details">
+                    <img src="images/3.jpg" alt="Coffee Service 2">
+                    <p>Indulge in the intense and invigorating experience of our hot espresso shot, 
+                        designed to deliver a powerful burst of flavor in every sip</p>
+                    <p>Price: $5.99</p>
+                    <p class="price"><button onclick="addItemToCart('item2')">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="service" id="item3">
+                <h3>Macchiato</h3>
+                <div class="details">
+                    <img src="images/4.jpg" alt="Coffee Service 3">
+                    <p>A rich and bold espresso delicately topped with a frothy layer of steamed milk, creating a
+                         perfect balance of robustness and creaminessy.</p>
+                    <p>Price: $5.99</p>
+                    <p class="price"><button onclick="addItemToCart('item3')">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="service" id="item4">
+                <h3>Cappuccino</h3>
+                <div class="details">
+                    <img src="images/7.jpg" alt="Coffee Service 4">
+                    <p>A harmonious blend of espresso, steamed milk, and a velvety foam, 
+                        offering a delightful balance of rich coffee flavors and a luxurious creamy texture.</p>
+                    <p>Price: $5.99</p>
+                    <p class="price"><button onclick="addItemToCart('item4')">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="service" id="item5">
+                <h3>Con Panna</h3>
+                <div class="details">
+                    <img src="images/6" alt="Coffee Service 5">
+                    <p>An indulgent espresso topped with a generous dollop of whipped cream, creating a luxurious and decadent coffee experience.</p>
+                    <p>Price: $5.99</p>
+                    <p class="price"><button onclick="addItemToCart('item5')">Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="learnmore">
+            <p>Learn More</p>
+        </div>
+    </section>
+
+    <script>
+           function addItemToCart(productId) {
+            const product = document.getElementById(productId);
+            const productName = product.querySelector('h3').innerText;
+            const productPrice = product.querySelector('.details p:nth-child(2)').innerText;
+            const productDescription = product.querySelector('.details p:nth-child(3)').innerText;
+            const productImage = product.querySelector('.details img').src;
+
+            const cartItem = { name: productName, price: productPrice, description: productDescription, image: productImage };
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(cartItem);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartDisplay();
+        }
+    </script>
+</body>
+</html>
