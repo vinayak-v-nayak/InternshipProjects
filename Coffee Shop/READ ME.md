@@ -1,4 +1,4 @@
-Developed a sleek and functional coffee shop website! MotionCut #WebDevelopment
+Developed a sleek and functional coffee shop website! 
 
 Project Details:
 
